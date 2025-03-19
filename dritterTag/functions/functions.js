@@ -107,3 +107,39 @@ countTo(15);
 // Wir wollen nun eine Funktion schreiben, die eine Obergrenze übergeben bekommt bis zu der gezählt werden soll
 // Und jede dieser Zahlen soll dann auf ihre Teilbarkeit geprüft werden und nach den obigen Regeln
 // auf der Konsole ausgegeben werden
+
+
+// Lambda Funktionen:
+// Alternative zu anonymen Funktionen
+// Anonyme Funktionen sind ohne Identifier
+
+//Anonyme Funktion:
+let sum = function (numOne, numTwo) {
+    return numOne + numTwo;
+};
+
+// Pfeilfunktion (Lambda)
+let quadruple = (a) => a * 4;
+
+// Normale Funktion
+function vervierfachen(a) {
+    return a * 4;
+}
+
+// Mehrzeiliger Lambda
+let mehrzeilig = (a, b) => {
+    a *= 2;
+    b *= 2;
+    return a * b;
+}
+
+/**
+ * Schreibe eine Lambda Funktion, die überprüft, ob eine gegebene Zahl eine Primzahl ist.
+ * Eine Primzahl ist eine natürliche Zahl größer als 1, die nur durch 1 und sich selbst teilabr ist
+ * 
+ * 1. Verwende eine Lambda Funktion.
+ * 2. Die Funktion soll eine Zahl als Parameter erhalten.
+ * 3. Falls die Zahl eine Primzahl ist, soll die Funktion true zurückgeben, sonst false.
+ * 4. Die Funktion sollte effizient sein und nicht alle Zahlen durchgehen (z.B. nur bis zur Quadratwurzel der Zahl prüfen)
+ * 5. Rufe die Funktion mit verschiedenen Zahlen auf und gib das Ergebnis in der Konsole aus.
+ **/
