@@ -1,22 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS-Manipulation</title>
-    <link rel="stylesheet" href="/vierterTag/JS-Manipulation/style.css">
-    <script src="/vierterTag/JS-Manipulation/script.js" defer></script>
+    <title>Interaktive Übung: Dark Mode, Dropdown & mehr</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Das JavaScript wird mit defer eingebunden -->
+    <script defer src="script.js"></script>
 </head>
 
 <body>
-    <h1 id="title">Willkommen!</h1>
-    <p id="text">Hier wird mit JavaScript der Inhalt geändert</p>
+    <header>
+        <h1>Interaktive Übung</h1>
+    </header>
 
-    <button id="changeTextBtn">Text ändern</button>
-    <button id="toggleClassBtn">Farbe ändern</button>
+    <main>
+        <!-- Bereich für die Buttons -->
+        <section class="controls">
+            <button id="toggleModeBtn">Dark Mode aktivieren</button>
+            <button id="changeTextBtn">Text ändern</button>
+            <button id="changeBoxColorBtn">Box-Farben ändern</button>
+        </section>
 
-    <div id="box" class="box">Ich bin eine Box!</div>
+        <!-- Dropdown-Menü für alternative Farbschemata (Bonus) -->
+        <section class="extra">
+            <label for="colorScheme">Wähle ein Farbschema:</label>
+            <select id="colorScheme">
+                <option value="default">Standard</option>
+                <option value="blue">Blau</option>
+                <option value="green">Grün</option>
+            </select>
+        </section>
+
+        <!-- Beispielparagraph, dessen Text per Button geändert wird -->
+        <section>
+            <p id="infoText">Dies ist ein Beispieltext. Klicke den Button, um ihn zu ändern.</p>
+        </section>
+
+        <!-- Boxen, deren Hintergrundfarben zufällig verändert werden -->
+        <section class="boxes">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </section>
+
+        <!-- Bilder: Eines für Light Mode, eines für Dark Mode -->
+        <section class="images">
+            <!-- Im Light Mode sichtbar -->
+            <img id="lightImg" src="/vierterTag/JS-Manipulation/nature.avif" alt="Natur" class="responsive">
+            <!-- Im Dark Mode sichtbar – standardmäßig ausgeblendet -->
+            <img id="darkImg" src="/vierterTag/JS-Manipulation/space.avif" alt="Weltraum" class="responsive hidden">
+        </section>
+
+        <!-- Login Formular -->
+        <section class="form-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" required>
+                <label for="password">Passwort:</label>
+                <input type="password" id="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+
+        <!-- Kontaktformular -->
+        <section class="form-section">
+            <h2>Kontakt</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="message">Nachricht:</label>
+                <textarea id="message" required></textarea>
+                <button type="submit">Absenden</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Deine Übung - Alle Rechte frei</p>
+    </footer>
 </body>
 
 </html>

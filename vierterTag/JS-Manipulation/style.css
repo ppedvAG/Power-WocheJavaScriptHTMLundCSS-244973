@@ -1,26 +1,106 @@
+/* Grundstil */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin: 50px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.5s ease, color 0.5s ease;
+    margin: 0;
+    padding: 0;
 }
 
+/* Header */
+header {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+}
+
+/* Buttons */
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dropdown-Bereich */
+.extra {
+    margin: 20px;
+}
+
+/* Boxen */
 .box {
     width: 200px;
     height: 100px;
+    margin: 10px auto;
     background-color: lightgray;
-    margin: 20px auto;
-    /* auto - Zentriert das Element*/
     line-height: 100px;
     font-weight: bold;
+    transition: background-color 0.5s ease;
 }
 
-.highlight {
-    background-color: yellow;
-    color: red;
-}
-
-button {
+/* Responsive Bilder */
+.responsive {
+    max-width: 100%;
+    height: auto;
     margin: 10px;
-    padding: 10px;
-    font-size: 16px;
+}
+
+/* Hilfsklasse zum Ausblenden */
+.hidden {
+    display: none;
+}
+
+/* Formulare */
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.form-section input,
+.form-section textarea {
+    margin: 5px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Dark Mode-Stile */
+.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode button {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .box {
+    background-color: #555;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+    background-color: #333;
+    color: #eee;
+    border: 1px solid #777;
+}
+
+/* Farbschema Bonus: Zusätzliche Klassen */
+.blue-scheme {
+    background-color: #e7f0fd;
+    color: #1a3e75;
+}
+
+.green-scheme {
+    background-color: #e8f5e9;
+    color: #2e7d32;
 }
