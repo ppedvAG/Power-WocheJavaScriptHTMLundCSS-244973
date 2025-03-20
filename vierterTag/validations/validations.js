@@ -71,7 +71,7 @@ function checkPlz() {
         // Zeigt die Fehlermeldung direkt an
         zipCode.reportValidity();
     }
-}
+};
 
 // Event-Listener für Änderungen im PLZ-Feld
 zipCode.addEventListener("input", checkPlz);
