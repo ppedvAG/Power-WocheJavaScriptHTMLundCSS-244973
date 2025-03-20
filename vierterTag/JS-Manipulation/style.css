@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    margin: 20px auto;
+    /* auto - Zentriert das Element*/
+    line-height: 100px;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: yellow;
+    color: red;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
